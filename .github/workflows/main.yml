@@ -24,9 +24,9 @@ jobs:
           username: ${ { secrets.DOCKER_USERMANE } }
           password: ${ { secrets.DOCKER.PASSWORD } }
           repository: ${ { github.repository } }
-          tag_with_ref:true
-          tag_with_sha:true
-          tags:${{github.sha}}
+           tag_with_ref:true
+           tag_with_sha:true
+           tags:${{github.sha}}
       - name: Install dependencies
         run: npm ci
       - name: Run tests
