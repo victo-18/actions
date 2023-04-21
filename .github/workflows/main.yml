@@ -11,8 +11,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: buil and push to docker
+      - name: Buil and push
         uses: docker/build-push-action@v2
+          with:
+          context: .
+          push: true
+          tags: user/app:latest
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
