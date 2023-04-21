@@ -1,5 +1,5 @@
 const request = require('supertest')
-const app = require("./github/workflows/app")
+const app = require("./.github/workflows/app")
 //const sum = require("./sum");
 const { default: expect } = require('expect');
 //const { describe } = require('yargs');
